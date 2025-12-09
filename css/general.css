@@ -1,0 +1,62 @@
+:root {
+  /* colours */
+  --color-morkeblaa: #223a59;
+  --color-mellemblaa: #7a90a8;
+  --color-lyseblaa: #afcae8;
+  --color-hovergron: #819e83;
+  --color-ctagron: #bdcfaa;
+  --color-tekstgul: #f7f7c6;
+  --color-hvid: #ffff;
+  --color-sort: #000;
+
+  /* fonts */
+  --font-h1: "montserrat", sans-serif;
+  --font-h2: "montserrat", sans-serif;
+  --font-h3: "trirong-regular-italic", sans-serif;
+  --font-p: "trirong-regular", sans-serif;
+}
+
+/** montserrat font **/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/** trirong font **/
+.trirong-regular {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.trirong-medium {
+  font-family: "Trirong", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.trirong-bold {
+  font-family: "Trirong", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.trirong-regular-italic {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.trirong-medium-italic {
+  font-family: "Trirong", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.trirong-bold-italic {
+  font-family: "Trirong", serif;
+  font-weight: 700;
+  font-style: italic;
+}
