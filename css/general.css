@@ -1,3 +1,16 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 :root {
   /* colours */
   --color-morkeblaa: #223a59;
@@ -8,27 +21,52 @@
   --color-tekstgul: #f7f7c6;
   --color-hvid: #ffff;
   --color-sort: #000;
-
-  /* fonts */
-  --font-h1: "montserrat", sans-serif;
-  --font-h2: "montserrat", sans-serif;
-  --font-h3: "trirong-regular-italic", sans-serif;
-  --font-p: "trirong-regular", sans-serif;
 }
 
-/** montserrat font **/
-.montserrat {
+/** fonts **/
+h1 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 800;
   font-style: normal;
+  color: var(--color-tekstgul);
 }
 
-/** trirong font **/
-.trirong-regular {
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--color-tekstgul);
+}
+
+h3 {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+p {
   font-family: "Trirong", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+button {
+  background-color: var(--color-ctagron);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+button:hover {
+  background-color: var(--color-hovergron);
 }
 
 .trirong-medium {
@@ -41,12 +79,6 @@
   font-family: "Trirong", serif;
   font-weight: 700;
   font-style: normal;
-}
-
-.trirong-regular-italic {
-  font-family: "Trirong", serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 .trirong-medium-italic {
