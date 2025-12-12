@@ -92,3 +92,38 @@ button:hover {
   font-weight: 700;
   font-style: italic;
 }
+
+/******** Animationer *******/
+@keyframes clip-reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.cafebillede {
+  animation: clip-reveal ease-out both;
+  animation-timeline: view();
+  animation-range: 10% 50%;
+}
+
+@keyframes clip-reveal-top {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.pbbillede {
+  animation: clip-reveal-top ease-out both;
+  animation-timeline: view();
+  animation-range: 10% 50%;
+}
