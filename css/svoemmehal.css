@@ -19,6 +19,7 @@
 
 .svommehal_grid_1_1_1 {
   padding: 50px;
+  align-items: center !important;
 }
 .svommehal_grid_1_1_1 p {
   text-align: center;
@@ -27,6 +28,11 @@
 
 .svommehal_ctaknapper {
   padding: 20px;
+}
+.svommehal_grid_1_1_1 img {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
 }
 
 /********* svømmefaciliteter *******/
@@ -89,8 +95,11 @@ ul {
 }
 
 main {
-  max-width: 1200px;
-  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  > * {
+    grid-column: 2;
+  }
 }
 
 /******** desktop ***********/
@@ -100,7 +109,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 0.5fr 2fr;
     grid-template-rows: 0.1fr 0.2fr 0.8fr;
-    padding: 40px;
+    padding: 20px 40px;
   }
 
   .svommehal_img {
@@ -115,7 +124,7 @@ main {
     grid-row: 3/4;
     background-color: white;
     padding: 0px 40px;
-    place-self: center;
+    place-self: start;
   }
   #svommehal_h1 {
     display: grid;
@@ -134,6 +143,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   #svommehal_streg1 {
@@ -189,15 +200,24 @@ main {
     display: contents; /* gør at børn opfører sig som direkte børn af .svommefaciliteter_grid */
   }
 
+  ul {
+    padding-left: 0px;
+  }
+
   /********* info **********/
   .svommehal_regler {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 100px 50px;
+    padding: 100px 80px;
     max-width: unset;
     margin-inline: 0;
     margin-top: 0;
+    grid-column: 1 / -1;
+  }
+  .svommehal_regler p,
+  li {
+    width: 70%;
+    margin: 0 auto;
   }
 
   .obs_text {
