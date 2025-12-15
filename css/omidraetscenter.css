@@ -20,13 +20,17 @@
   font-weight: bold;
 }
 
+.bold p {
+  font-weight: bold;
+}
+
 .personale h3,
 .Bestyrelse h3 {
   font-style: normal;
 }
 
 .blue h2 {
-  color: #223a59;
+  color: var(--color-morkeblaa);
   text-align: center;
 }
 
@@ -35,7 +39,7 @@ h3 {
 }
 
 .Bestyrelse h2 {
-  color: #223a59;
+  color: var(--color-morkeblaa);
   text-align: center;
 }
 
@@ -57,7 +61,7 @@ ul {
 /******* Layout *******/
 .personale,
 .cafe {
-  background-color: #afcae8;
+  background-color: var(--color-lyseblaa);
 }
 
 .grid-1-1-1,
@@ -122,7 +126,7 @@ h2 {
     display: block;
     width: 80%;
     height: 1px;
-    background-color: #000;
+    background-color: var(--color-sort);
     margin: 30px auto 0 auto;
   }
 
@@ -188,6 +192,6 @@ h2 {
   }
 
   .grid-1-1-1-b > div:not(:first-child) {
-    border-left: 1px solid #000;
+    border-left: 1px solid var(--color-sort);
   }
 }

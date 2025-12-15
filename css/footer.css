@@ -1,7 +1,10 @@
 /*** FOOTER ***/
 .footer {
   background-color: var(--color-mellemblaa);
-  padding: 5rem;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +52,22 @@
   height: auto;
   cursor: pointer;
 }
+
+form {
+  display: block;
+  justify-items: center;
+  padding: 10px;
+  background-color: var(--color-mellemblaa);
+}
+
+form p {
+  color: white;
+}
+
+form button {
+  margin: 20px;
+}
+
 /*** FOOTER MOBIL ***/
 @media (max-width: 800px) {
   .footer {
