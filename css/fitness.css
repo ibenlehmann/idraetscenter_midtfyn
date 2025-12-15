@@ -1,0 +1,257 @@
+/** FITNESS **/
+/** Mobil version **/
+/** Del 1 **/
+.fitness_lyseblaa {
+  background-color: var(--color-lyseblaa);
+  align-items: center;
+  text-align: left;
+  padding: 3rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.fitness_knap1 {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/** Del 2 **/
+.fitness_del2 div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 4rem;
+}
+
+.fitness_del2 img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/** Del 3 **/
+.fitness_del3 div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 7rem 4rem;
+
+  background-color: var(--color-mellemblaa);
+}
+
+.fitness_del3 p {
+  color: white;
+}
+
+/** Del 4 **/
+.fitness_del4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 3rem 4rem;
+}
+
+.fitness_del4 div {
+  padding-bottom: 2rem;
+}
+
+.fitness_del4 img {
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.fitness_del4 h2 {
+  color: var(--color-mellemblaa);
+  padding-top: 3rem;
+}
+
+.fitness_del4_tekst h3 {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.fitness_del4_tekst .bat {
+  margin-top: 2rem;
+}
+
+.fitness_del4_tekst p {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.fitness_del4_tekst {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/** Del 5 **/
+.fitness_del5 h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.fitness_del5 div {
+  background-color: var(--color-lyseblaa);
+  align-items: center;
+  text-align: left;
+  padding: 3rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fitness_del5 p {
+  padding-top: 2rem;
+}
+
+.fitness_h3_bold {
+  font-weight: 800;
+}
+
+/****************** DESKTOP VERSION ******************/
+@media (min-width: 850px) {
+  /* del 1 desktop*/
+  .fitness_del1 {
+    display: flex;
+  }
+
+  .fitness_del1 img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fitness_lyseblaa {
+    width: 50%;
+    justify-content: center;
+  }
+
+  /* del 2 desktop */
+  .fitness_del2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .fitness_del2 div {
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 5rem 2rem;
+  }
+
+  .fitness_del2 p {
+    max-width: 250px;
+  }
+
+  .fitness_del2 button {
+    margin-top: auto;
+  }
+
+  .fitness_streg {
+    border-right: 0.7px solid black;
+    margin: 5rem 0rem;
+  }
+
+  .fitness_streg2 {
+    border-right: 1px solid white;
+    margin: 5rem 0rem;
+  }
+
+  /** del 3 desktop **/
+  .fitness_del3 {
+    order: 1;
+    display: flex;
+    background-color: var(--color-mellemblaa);
+    padding: 4rem 3rem 4rem 0rem;
+  }
+
+  .fitness_del3 img {
+    order: 2;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fitness_del3 div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fitness_del3 p {
+    padding-top: 1.2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    min-width: 200px;
+  }
+
+  /** del 4 desktop **/
+  .fitness_del4 img {
+    width: 400px;
+    height: auto;
+    margin: 2rem;
+    display: block;
+  }
+
+  .fitness_del4_1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .fitness_del4_1 p {
+    margin-right: 2rem;
+    max-width: 600px;
+  }
+
+  .fitness_del4_2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .fitness_del4_2 p {
+    margin-left: 2rem;
+    max-width: 550px;
+    order: 1;
+  }
+
+  .fitness_del4_2 img {
+    order: 2;
+  }
+
+  /* del 5 desktop */
+  .fitness_del5 {
+    background-color: var(--color-lyseblaa);
+  }
+
+  .fitness_del5_1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 6rem 5rem;
+  }
+
+  .fitness_del5 img {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .fitness_del5 p {
+    max-width: 600px;
+  }
+}

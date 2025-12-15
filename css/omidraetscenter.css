@@ -1,0 +1,193 @@
+/******* Billeder *******/
+.personale img,
+.Bestyrelse img {
+  border-radius: 10rem;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+@media (min-width: 840px) {
+  .cafe img {
+    width: 45rem;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/******* Font *******/
+.bold {
+  font-weight: bold;
+}
+
+.personale h3,
+.Bestyrelse h3 {
+  font-style: normal;
+}
+
+.blue h2 {
+  color: #223a59;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.Bestyrelse h2 {
+  color: #223a59;
+  text-align: center;
+}
+
+.personale h2 {
+  text-align: center;
+}
+
+.Bestyrelse ul,
+.personale ul,
+.blue ul {
+  list-style-type: none;
+}
+
+ul {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+}
+
+/******* Layout *******/
+.personale,
+.cafe {
+  background-color: #afcae8;
+}
+
+.grid-1-1-1,
+.grid-1-1,
+.grid-1-1-1-b,
+.grid-1-1-c,
+.grid-1-1-1-t,
+.grid-1-1-t {
+  place-items: center;
+  text-align: center;
+}
+
+.grid-1-1-c p,
+.grid-1-1-c .bold,
+h2 {
+  padding: 20px;
+}
+
+@media (max-width: 840px) {
+  .personale img {
+    margin-top: 50px;
+  }
+
+  .Bestyrelse img {
+    margin-top: 50px;
+  }
+
+  .grid-1-1-1 {
+    padding-bottom: 50px;
+  }
+
+  .grid-1-1-m {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-1-1-1-t button,
+  .grid-1-1-t button {
+    margin-top: 10px;
+  }
+
+  .grid-1-1-1-b {
+    margin: 30px;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .grid-1-1-1-b h2 {
+    margin-top: 50px;
+  }
+
+  .grid-1-1-1-b > div {
+    border-left: none;
+    padding: 0;
+  }
+
+  .grid-1-1-1-b > div {
+    position: relative;
+  }
+
+  .grid-1-1-1-b > div::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #000;
+    margin: 30px auto 0 auto;
+  }
+
+  .grid-1-1-1-b > div:last-child::after {
+    display: none;
+  }
+}
+
+@media (min-width: 840px) {
+  .grid-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 40px;
+    padding: 20px;
+  }
+
+  .grid-1-1-1-t {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-block: 30px;
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .grid-1-1-t {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 40px;
+    padding: 20px;
+  }
+
+  .grid-1-1-c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    text-align: start;
+  }
+  .grid-1-1-1-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 40px;
+    padding: 20px;
+  }
+
+  .grid-1-1-1-b > div {
+    padding: 40px 40px;
+    position: relative;
+  }
+
+  .grid-1-1-1-b > div:not(:first-child) {
+    border-left: 1px solid #000;
+  }
+}
