@@ -14,15 +14,40 @@
 
     <link rel="stylesheet" href="css/svoemmehal.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <title>Svømmehal - Idrætscenter Midtfyn</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logomidtfyn.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="svoemmehal.html">Svømmehal</a></li>
+                <li><a href="omidraetscenter.html">Om os</a></li>
+                <li><a href="index.html">Camping</a></li>
+                <li><a href="index.html">Nyheder</a></li>
+                <li><button class="cta-btn">Login</button></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
     </header>
 
     <main>
+        
         <div class="svommehal">
             <div class="svommehal_img">
                 <img src="img/stortbassin.webp" alt="Billede af stortbassin">
@@ -41,8 +66,8 @@
                         plads til motion, ro og gode oplevelser for alle.</p>
                     <div class="cta_svommehal">
                         <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp?f=skiftprefix" target="_blank"
-                            rel="noopener noreferrer">
-                            <button>BLIV MEDLEM</button>
+                            rel="noopener noreferrer" class="cta-knap">
+                            BLIV MEDLEM
                         </a>
                     </div>
                 </div>
@@ -55,8 +80,8 @@
                 <p>Her kan du finde priser på svømmehallen:</p>
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
-                        rel="noopener noreferrer">
-                        <button>PRISER</button>
+                        rel="noopener noreferrer" class="cta-knap">
+                        PRISER
                     </a>
                 </div>
             </div>
@@ -65,8 +90,8 @@
                 <p>Baderegler er vigitge! <br>Her kan du finde dem og læse om dem:</p>
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
-                        rel="noopener noreferrer">
-                        <button>BADEREGLER</button>
+                        rel="noopener noreferrer" class="cta-knap">
+                        BADEREGLER
                     </a>
                 </div>
             </div>
@@ -75,10 +100,9 @@
                 <p>Her kan du se de gældende åbningstider for svømmehalen:</p>
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
-                        rel="noopener noreferrer">
-                        <button>ÅBNINGSTIDER</button>
+                        rel="noopener noreferrer" class="cta-knap">
+                        ÅBNINGSTIDER
                     </a>
-
                 </div>
             </div>
         </div>
@@ -145,8 +169,8 @@
                     link for at leje svømmehallen:</p>
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
-                        rel="noopener noreferrer">
-                        <button>LEJ SVØMMEHAL</button>
+                        rel="noopener noreferrer" class="cta-knap">
+                        LEJ SVØMMEHAL
                     </a>
                 </div>
             </div>
@@ -156,8 +180,8 @@
     <footer>
         <section class="footer">
             <div>
-                <a href="https://www.google.com/maps/place/S%C3%B8vej+34,+5750+Ringe/@55.2412148,10.4633833,2125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464d25e80744cb5b:0xbead35b71a7fe716!8m2!3d55.241203!4d10.473683!16s%2Fg%2F11nnv8gs39?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank" rel="noopener noreferrer" class="footer_box" id="footer_link">
+                <a href="https://www.google.com/maps/place/S%C3%B8vej+34,+5750+Ringe/@55.2412148,10.4633833,2125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464d25e80744cb5b:0xbead35b71a7fe716!8m2!3d55.241203!4d10.473683!16s%2Fg%2F11nnv8gs39?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"
+                    class="footer_box" id="footer_link">
                     <img src="img/maps.webp" alt="Google Maps icon">
                     <div>
                         <p>Søvej 34</p>
@@ -173,15 +197,17 @@
             </div>
 
             <div class="footer_box2">
-                <a href="https://www.facebook.com/ICMIDTFYN/?locale=da_DK" target="_blank"
-                    rel="noopener noreferrer"><img id="facebook" src="img/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/idraetscenter_midtfyn/" target="_blank"
-                    rel="noopener noreferrer"><img id="instagram" src="img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/ICMIDTFYN/?locale=da_DK" target="_blank" rel="noopener noreferrer"><img
+                        id="facebook" src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/idraetscenter_midtfyn/" target="_blank" rel="noopener noreferrer"><img
+                        id="instagram" src="img/instagram.png" alt="instagram"></a>
 
             </div>
         </section>
     </footer>
+    
     <script src="javascript/login.js"></script>
+    <script src="javascript/burger.js"></script>
 </body>
 
 </html>
