@@ -1,0 +1,218 @@
+/********Animationer**********/
+.eventbillede {
+  animation: slideIn 4s ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/************Popover***********/
+#plantegning-popover {
+  padding: 0;
+  border: none;
+  margin: auto;
+
+  width: fit-content;
+  height: fit-content;
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  background: transparent;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#plantegning-popover::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+#plantegning-popover img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+/****************************Hero***********************/
+
+body {
+  margin: 0;
+}
+h3 {
+  font-size: 2rem;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 90%;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* h1 */
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* h2 */
+.hero-text h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+.cta-btn {
+  margin-top: 2rem;
+}
+/******************Event***************/
+.beg {
+  text-align: center;
+  margin-top: 0rem;
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.cta-btn {
+  display: block;
+  margin: 2rem auto;
+}
+
+.grid-wrapper p {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/****************Plantegning**********/
+.plan {
+  text-align: center;
+  margin-top: 8rem;
+  color: black;
+}
+
+.plantegning img {
+  border-radius: 10px;
+}
+/****************Findvej**********/
+.findvej {
+  text-align: center;
+  margin-top: 8rem;
+  color: black;
+}
+.findvej2 {
+  margin-top: 3rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+/****************Billeder************/
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.events {
+  background-color: #afcae8;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+/*****************Billede***************/
+
+.findvej2 img {
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+/************* desktop ********/
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  /*********Events grid***********/
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .eventbillede img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*****Nederste Grid**********/
+  .bund-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 50px auto;
+  }
+  .find {
+    border-right: 1px solid #000;
+    padding-right: 120px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .plantegning {
+    padding-left: 120px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  /* colours */
+  --color-morkeblaa: #223a59;
+  --color-mellemblaa: #7a90a8;
+  --color-lyseblaa: #afcae8;
+  --color-hovergron: #819e83;
+  --color-ctagron: #bdcfaa;
+  --color-tekstgul: #f7f7c6;
+  --color-hvid: #ffff;
+  --color-sort: #000;
+}
+
+/** fonts **/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--color-tekstgul);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--color-tekstgul);
+}
+
+h3 {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+p {
+  font-family: "Trirong", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  background-color: var(--color-ctagron);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+button:hover {
+  background-color: var(--color-hovergron);
+}
+
+.trirong-medium {
+  font-family: "Trirong", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.trirong-bold {
+  font-family: "Trirong", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.trirong-medium-italic {
+  font-family: "Trirong", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.trirong-bold-italic {
+  font-family: "Trirong", serif;
+  font-weight: 700;
+  font-style: italic;
+}

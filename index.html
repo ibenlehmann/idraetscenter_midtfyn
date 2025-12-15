@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logomidtfyn.png" alt="logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="svoemmehal.html">Svømmehal</a></li>
+                <li><a href="omidraetscenter.html">Om os</a></li>
+                <li><a href="index.html">Camping</a></li>
+                <li><a href="index.html">Nyheder</a></li>
+                <li><button class="cta-btn">Login</button></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+
+    </header>
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="img/rundvisning.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-text">
+            <h1>IDRÆTSCENTER MIDTFYN</h1>
+            <h2>Det mest besøgte idrætscenter i Faaborg-Midtfyn kommune</h2>
+            <button class="cta-btn">BLIV MEDLEM</button>
+        </div>
+    </div>
+    <section class="events">
+        <h3 class="beg">Kommende Begivenheder</h3>
+        <div class="grid-wrapper">
+            <div class="eventbillede">
+                <img src="img/formel1.png" alt="formel1">
+            </div>
+            <div>
+                <p>
+                    Peter Nygaard og Felix Smith laver hver uge Danmarks mest populære Formel 1-podcast.
+                    d26. februar kl. 19.00 kommer de til Idrætscenter Mitdfyn.
+                    Billetpris fra 250 kr.
+                </p>
+                <button class="cta-btn">KØB BILLET</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="bund-grid">
+
+        <section class="find">
+            <h3 class="findvej">Find vej -</h3>
+            <div class="findvej2">
+                <a href="https://shorturl.at/o7rqF" target="_blank" rel="noopener noreferrer">
+                    <img src="img/maps.png" alt="maps">
+                </a>
+            </div>
+            <div>
+                <p>Lige på midten af Fyn!</p>
+            </div>
+        </section>
+
+        <section class="plantegning">
+            <h3 class="plan">Plantegning</h3>
+
+            <p>I indgangen er opsat en informationsskærm...</p>
+
+            <button class="planteg-btn" popovertarget="plantegning-popover" popovertargetaction="toggle">
+                <img src="img/plantegningg.png" alt="plantegning">
+            </button>
+
+            <p>Klik på billedet for at få plantegningen op i fuld størrelse</p>
+        </section>
+
+        <div id="plantegning-popover" popover>
+            <img src="img/plantegningfuld.webp" alt="Plantegning i fuld størrelse">
+        </div>
+
+
+
+    </div>
+
+
+    <main>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/burger.js"></script>
+</body>
+
+</html>
