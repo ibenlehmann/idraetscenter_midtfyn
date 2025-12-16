@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
-   <title>Idrætscenter Midtfyn</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Idrætscenter Midtfyn</title>
+    <link rel="icon" type="img/fav-icon" href="img/favicon-icm.ico">
 </head>
 
 <body>
@@ -28,89 +30,93 @@
 
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
                 <li><a href="fitness.html">Fitness</a></li>
                 <li><a href="svoemmehal.html">Svømmehal</a></li>
                 <li><a href="omidraetscenter.html">Om os</a></li>
-                <li><a href="index.html">Camping</a></li>
-                <li><a href="index.html">Nyheder</a></li>
-                <li><button class="cta-btn">Login</button></li>
+                <li><a>Camping</a></li>
+                <li><a>Nyheder</a></li>
+                <li><a href="https://icmidtfyn.halbooking.dk/newlook/default.asp?f=skiftprefix"><button
+                            class="cta-btn">LOGIN</button></a></li>
             </ul>
             <button class="burger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
             </button>
         </nav>
 
     </header>
-    <div class="hero">
-        <video autoplay muted loop>
-            <source src="img/rundvisning.mp4" type="video/mp4">
-        </video>
+    <main>
+        <div class="hero">
+            <video autoplay muted loop>
+                <source src="img/rundvisning.mp4" type="video/mp4">
+            </video>
 
-        <div class="hero-text">
-            <h1>IDRÆTSCENTER MIDTFYN</h1>
-            <h2>Det mest besøgte idrætscenter i Faaborg-Midtfyn kommune</h2>
-            <button class="cta-btn">BLIV MEDLEM</button>
-        </div>
-    </div>
-    <section class="events">
-        <h3 class="beg">Kommende Begivenheder</h3>
-        <div class="grid-wrapper">
-            <div class="eventbillede">
-                <img src="img/formel1.png" alt="formel1">
-            </div>
-            <div>
-                <p>
-                    Peter Nygaard og Felix Smith laver hver uge Danmarks mest populære Formel 1-podcast.
-                    d26. februar kl. 19.00 kommer de til Idrætscenter Mitdfyn.
-                    Billetpris fra 250 kr.
-                </p>
-                <button class="cta-btn">KØB BILLET</button>
-            </div>
-        </div>
-    </section>
-
-    <div class="bund-grid">
-
-        <section class="find">
-            <h3 class="findvej">Find vej -</h3>
-            <div class="findvej2">
-                <a href="https://shorturl.at/o7rqF" target="_blank" rel="noopener noreferrer">
-                    <img src="img/maps.png" alt="maps">
+            <div class="hero-text">
+                <h1>IDRÆTSCENTER MIDTFYN</h1>
+                <h2>Det mest besøgte idrætscenter i Faaborg-Midtfyn kommune</h2>
+                <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank" rel="noopener noreferrer">
+                    <button class="cta-btn">BLIV
+                        MEDLEM</button>
                 </a>
             </div>
-            <div>
-                <p>Lige på midten af Fyn!</p>
+        </div>
+        <section class="events">
+            <h3 class="beg">Kommende Begivenheder</h3>
+            <div class="grid-wrapper">
+                <div class="eventbillede">
+                    <img class="cafebillede" src="img/formel1.png" alt="formel1">
+                </div>
+                <div>
+                    <p>
+                        Peter Nygaard og Felix Smith laver hver uge Danmarks mest populære Formel 1-podcast.
+                        d26. februar kl. 19.00 kommer de til Idrætscenter Mitdfyn.
+                        Billetpris fra 250 kr.
+                    </p>
+                    <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
+                        rel="noopener noreferrer">
+                        <button class="cta-btn">KØB BILLET</button>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="plantegning">
-            <h3 class="plan">Plantegning</h3>
+        <div class="bund-grid">
 
-            <p>I indgangen er opsat en informationsskærm...</p>
+            <section class="find">
+                <h3 class="findvej">Find vej -</h3>
+                <div class="findvej2">
+                    <a href="https://shorturl.at/o7rqF" target="_blank" rel="noopener noreferrer">
+                        <img src="img/maps.png" alt="maps">
+                    </a>
+                </div>
+                <div>
+                    <p>Lige på midten af Fyn!</p>
+                </div>
+            </section>
 
-            <button class="planteg-btn" popovertarget="plantegning-popover" popovertargetaction="toggle">
-                <img src="img/plantegningg.png" alt="plantegning">
-            </button>
+            <section class="plantegning">
+                <h3 class="plan">Plantegning</h3>
 
-            <p>Klik på billedet for at få plantegningen op i fuld størrelse</p>
-        </section>
+                <p>I indgangen er opsat en informationsskærm...</p>
 
-        <div id="plantegning-popover" popover>
-            <img src="img/plantegningfuld.webp" alt="Plantegning i fuld størrelse">
+                <button class="planteg-btn" popovertarget="plantegning-popover" popovertargetaction="toggle">
+                    <img src="img/plantegningg.png" alt="plantegning">
+                </button>
+
+                <p>Klik på billedet for at få plantegningen op i fuld størrelse</p>
+            </section>
+
+            <div id="plantegning-popover" popover>
+                <img src="img/plantegningfuld.webp" alt="Plantegning i fuld størrelse">
+            </div>
+
+
+
         </div>
 
 
 
-    </div>
-
-
-    <main>
     </main>
 
-   <footer>
+    <footer>
         <section class="footer">
             <div>
                 <a href="https://www.google.com/maps/place/S%C3%B8vej+34,+5750+Ringe/@55.2412148,10.4633833,2125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464d25e80744cb5b:0xbead35b71a7fe716!8m2!3d55.241203!4d10.473683!16s%2Fg%2F11nnv8gs39?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoASAFQAw%3D%3D"
@@ -153,12 +159,12 @@
 
         </form>
     </footer>
+</body>
 
-    <script src="javascript/login.js"></script>
-    
-    <script src="javascript/burger.js"></script>
-    <link rel="stylesheet" href="css/footer.css">
-   
+<script src="javascript/login.js"></script>
+
+<script src="javascript/burger.js"></script>
+
 
 
 

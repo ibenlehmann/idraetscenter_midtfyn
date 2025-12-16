@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <title>Svømmehal - Idrætscenter Midtfyn</title>
+    <link rel="icon" type="img/fav-icon" href="img/favicon-icm.ico">
 </head>
 
 <body>
@@ -29,13 +30,12 @@
 
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Forside</a></li>
                 <li><a href="fitness.html">Fitness</a></li>
                 <li><a href="svoemmehal.html">Svømmehal</a></li>
                 <li><a href="omidraetscenter.html">Om os</a></li>
-                <li><a href="index.html">Camping</a></li>
-                <li><a href="index.html">Nyheder</a></li>
-                <li><button class="cta-btn">Login</button></li>
+                <li><a>Camping</a></li>
+                <li><a>Nyheder</a></li>
+                <li><button class="cta-btn">LOGIN</button></li>
             </ul>
             <button class="burger">
                 <span class="line"></span>
@@ -47,7 +47,7 @@
     </header>
 
     <main>
-        
+
         <div class="svommehal">
             <div class="svommehal_img">
                 <img src="img/stortbassin.webp" alt="Billede af stortbassin">
@@ -67,7 +67,9 @@
                     <div class="cta_svommehal">
                         <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp?f=skiftprefix" target="_blank"
                             rel="noopener noreferrer" class="cta-knap">
-                            BLIV MEDLEM
+                            <button>
+                                BLIV MEDLEM
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -81,7 +83,9 @@
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
                         rel="noopener noreferrer" class="cta-knap">
-                        PRISER
+                        <button>
+                            PRISER
+                        </button>
                     </a>
                 </div>
             </div>
@@ -91,7 +95,9 @@
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
                         rel="noopener noreferrer" class="cta-knap">
-                        BADEREGLER
+                        <button>
+                            BADEREGLER
+                        </button>
                     </a>
                 </div>
             </div>
@@ -101,7 +107,9 @@
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
                         rel="noopener noreferrer" class="cta-knap">
-                        ÅBNINGSTIDER
+                        <button>
+                            ÅBNINGSTIDER
+                        </button>
                     </a>
                 </div>
             </div>
@@ -109,7 +117,7 @@
 
         <div class="svommefaciliteter_grid">
             <div class="svommehal_faciliteter_img">
-                <img src="img/svømmehal2.webp" alt="svømmehal">
+                <img class="cafebillede" src="img/svømmehal2.webp" alt="svømmehal">
             </div>
             <div class="svommefaciliteter">
                 <div class="faciliteter_h2">
@@ -169,8 +177,9 @@
                     link for at leje svømmehallen:</p>
                 <div class="cta_svommehal">
                     <a href="https://icmidtfyn.halbooking.dk/newlook/default.asp" target="_blank"
-                        rel="noopener noreferrer" class="cta-knap">
-                        LEJ SVØMMEHAL
+                        rel="noopener noreferrer" class="cta-knap"> <button>
+                            LEJ SVØMMEHAL
+                        </button>
                     </a>
                 </div>
             </div>
@@ -180,8 +189,8 @@
     <footer>
         <section class="footer">
             <div>
-                <a href="https://www.google.com/maps/place/S%C3%B8vej+34,+5750+Ringe/@55.2412148,10.4633833,2125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464d25e80744cb5b:0xbead35b71a7fe716!8m2!3d55.241203!4d10.473683!16s%2Fg%2F11nnv8gs39?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer"
-                    class="footer_box" id="footer_link">
+                <a href="https://www.google.com/maps/place/S%C3%B8vej+34,+5750+Ringe/@55.2412148,10.4633833,2125m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464d25e80744cb5b:0xbead35b71a7fe716!8m2!3d55.241203!4d10.473683!16s%2Fg%2F11nnv8gs39?entry=ttu&g_ep=EgoyMDI1MTIwOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer" class="footer_box" id="footer_link">
                     <img src="img/maps.webp" alt="Google Maps icon">
                     <div>
                         <p>Søvej 34</p>
@@ -197,10 +206,10 @@
             </div>
 
             <div class="footer_box2">
-                <a href="https://www.facebook.com/ICMIDTFYN/?locale=da_DK" target="_blank" rel="noopener noreferrer"><img
-                        id="facebook" src="img/facebook.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/idraetscenter_midtfyn/" target="_blank" rel="noopener noreferrer"><img
-                        id="instagram" src="img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/ICMIDTFYN/?locale=da_DK" target="_blank"
+                    rel="noopener noreferrer"><img id="facebook" src="img/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/idraetscenter_midtfyn/" target="_blank"
+                    rel="noopener noreferrer"><img id="instagram" src="img/instagram.png" alt="instagram"></a>
 
             </div>
         </section>
@@ -220,7 +229,7 @@
 
         </form>
     </footer>
-    
+
     <script src="javascript/login.js"></script>
     <script src="javascript/burger.js"></script>
 </body>

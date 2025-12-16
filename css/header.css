@@ -34,7 +34,6 @@ header {
 header .menu {
   list-style: none;
   margin: 0;
-  padding: 20px;
   display: flex;
   gap: 25px;
   align-items: center;
@@ -97,6 +96,10 @@ header .menu li a {
   header .menu li a {
     font-size: 1.2rem;
     display: block;
+  }
+  .logo {
+    max-width: 200px;
+    height: auto;
   }
 }
 /************************Burger********/
